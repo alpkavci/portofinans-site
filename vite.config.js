@@ -7,15 +7,4 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  server: {
-    proxy: {
-      // BIST verisi için Yahoo Finance proxy (CORS bypass, sadece dev)
-      '/api/yahoo': {
-        target: 'https://query1.finance.yahoo.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/yahoo/, ''),
-        secure: true,
-      },
-    },
-  },
 })

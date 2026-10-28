@@ -1,4 +1,9 @@
 {
+  "redirects": [
+    { "source": "/piyasalar", "destination": "/", "permanent": true },
+    { "source": "/haberler", "destination": "/#paylasimlar", "permanent": true },
+    { "source": "/kripto", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
