@@ -1,16 +1,20 @@
-# React + Vite
+# portofinans.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PortoFinans'ı tanıtan tek sayfalık site. Görsel dil Instagram (@portofinans) ve X (@portofinans) hesaplarından alındı: okyanus mavisi, çapalı uygulama ikonu, Montserrat, beyaz hap butonlar.
 
-Currently, two official plugins are available:
+## Geliştirme
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # dist/ klasörüne üretim çıktısı
+npm run lint
+```
 
-## React Compiler
+## İçerik
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tüm metinler, bağlantılar ve öne çıkan paylaşımlar `src/content.js` içindedir. Yeni bir paylaşımı öne çıkarmak için yalnızca bu dosyayı güncellemek yeterli.
 
-## Expanding the ESLint configuration
+## Yayın
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vercel, `main` dalını otomatik olarak portofinans.com'a yayınlar. Diğer dallar için önizleme adresi üretir. Eski `/piyasalar`, `/haberler` ve `/kripto` adresleri `vercel.json` ile ana sayfaya yönlenir.
